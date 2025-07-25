@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteador de Números</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="titulo">FrontTec Sorteios</h1>
+        <div class="inputs">
+            
+            <div class="input-min">
+                <label for="min">Entre:</label>
+                <input type="number" id="min" value="1"><br>
+            </div>
+
+            <div class="input-max">
+                <label for="max">e:</label>
+                <input type="number" id="max" value="10"><br><br>
+            </div>
+            
+        </div>
+        <button onclick="sortear()">Sortear</button>
+        <div class="div-resultado">
+            <h2>Número sorteado: <span id="resultado">---</span></h2>
+            <h3>Histórico:</h3>
+        </div>
+
+        <div id="div-historico">
+            <ul id="historico"></ul>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
